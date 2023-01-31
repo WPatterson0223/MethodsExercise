@@ -24,7 +24,40 @@ internal class Methods
 				$"it stepped onto a {bomb}");
 
 		}
+    public static void Add(params int[] ListNumbers)
+    {
+		int total = 0;
+        foreach (int i in ListNumbers)
+        {
+            total += i;
+        }
+        Console.WriteLine(total);
 
-	
+    }
+
+    public static void Subtract(params int[] ListNumbers)
+    {
+		int total = 0;
+        foreach (int i in ListNumbers)
+        {
+            total -= i;
+        }
+        Console.WriteLine(total);
+
+    }
+
+    public static void Divide(params int[] ListNumbers)
+    {
+		int total = 0;
+		Console.WriteLine();
+
+    }
+
+    public static void Multiply(params int[] ListNumbers)
+    {
+		int total;
+		Console.WriteLine();
+    }
+
 }
 
