@@ -11,8 +11,8 @@ public class Program
         Console.WriteLine();
         Methods.Subtract(1,2,3,4);
         Console.WriteLine();
-        Methods.Multiply();
+        Methods.Multiply(2,2,6);
         Console.WriteLine();
-        Methods.Divide();
+        Methods.Divide(16,2,2);
     }
 }

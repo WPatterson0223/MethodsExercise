@@ -1,5 +1,7 @@
 ﻿using System;
 using MethodsExercise;
+using Microsoft.VisualBasic;
+
 namespace MethodsExercise;
 
 internal class Methods
@@ -48,15 +50,30 @@ internal class Methods
 
     public static void Divide(params int[] ListNumbers)
     {
-		int total = 0;
-		Console.WriteLine();
+
+        int total = ListNumbers[0];
+
+        for (int num = 1; num < ListNumbers.Count(); num++)
+        {
+            total = total / ListNumbers[num];
+        }
+
+        Console.WriteLine(total);
 
     }
 
     public static void Multiply(params int[] ListNumbers)
     {
-		int total;
-		Console.WriteLine();
+
+        int total = ListNumbers[0];
+
+        for (int num = 1; num < ListNumbers.Count(); num++)
+        {
+
+            total = total * ListNumbers[num];
+        }
+
+        Console.WriteLine(total);
     }
 
 }
